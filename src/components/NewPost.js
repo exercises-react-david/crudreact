@@ -13,7 +13,7 @@ export default class NewPost extends Component {
             body: this.contentRef.current.value,
             userId: 1
         }
-        console.log(newPost);
+        this.props.createPost(newPost);
     }
 
     render() {
